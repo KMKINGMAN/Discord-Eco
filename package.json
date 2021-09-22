@@ -1,0 +1,33 @@
+{
+  "name": "discord-eco-kingman",
+  "version": "1.0.0",
+  "description": "discord eco system bot",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "node index.js"
+  },
+  "dependencies": {
+    "ascii-table": "^0.0.9",
+    "colors": "^1.4.0",
+    "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0",
+    "figlet": "^1.5.2",
+    "mongoose": "^6.0.7",
+    "ms": "^2.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KMKINGMAN"
+  },
+  "keywords": [
+    "discord.js",
+    "discord",
+    "bot",
+    "discord",
+    "eco"
+  ],
+  "author": "muhammad rafat kurkar [+962792914245]",
+  "license": "GPL-3.0"
+}
