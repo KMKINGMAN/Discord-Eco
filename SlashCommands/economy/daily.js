@@ -5,6 +5,6 @@ module.exports = {
     usage: ["daily"],
     category: "economy",
     run : async (client , interacion) =>{
-        interacion.reply(await client.Daily(kmsg.author))
+        interacion.reply(await client.Daily(interacion.member))
     }
 }
