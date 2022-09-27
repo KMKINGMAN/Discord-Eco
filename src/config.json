@@ -1,0 +1,6 @@
+{
+    "token": "BOT_TOKEN",
+    "prefix": "BOT_PRFIX",
+    "mongo": "DATABASE_CONNECTION",
+    "client_id": "BOT_ID"
+}

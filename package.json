@@ -1,33 +1,27 @@
 {
-  "name": "discord-eco-kingman",
-  "version": "1.0.0",
-  "description": "discord eco system bot",
-  "main": "index.js",
-  "devDependencies": {},
-  "scripts": {
-    "start": "node index.js",
-    "test": "node index.js"
-  },
+  "name": "discord-eco",
+  "version": "2.0.0",
+  "description": " Discord economy System MongoDB and DJSV14",
+  "main": "src/index.ts",
+  "repository": "https://github.com/kmkingman/discord-eco",
+  "author": "Muhammad Rafat Kurkar",
+  "license": "MIT",
   "dependencies": {
-    "ascii-table": "^0.0.9",
-    "colors": "^1.4.0",
-    "discord.js": "^13.1.0",
-    "dotenv": "^10.0.0",
+    "@types/figlet": "^1.5.5",
+    "@types/fs-extra": "^9.0.13",
+    "@types/ms": "^0.7.31",
+    "chalk": "^4.1.2",
+    "discord-api-types": "^0.37.8",
+    "discord.js": "^14.3.0",
+    "djs-button-pages": "^2.1.3",
+    "dotenv": "^16.0.2",
     "figlet": "^1.5.2",
-    "mongoose": "^6.0.7",
-    "ms": "^2.1.2"
+    "fs-extra": "^10.1.0",
+    "mongoose": "^6.6.1",
+    "ms": "^2.1.3",
+    "ts-node": "^10.9.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/KMKINGMAN"
-  },
-  "keywords": [
-    "discord.js",
-    "discord",
-    "bot",
-    "discord",
-    "eco"
-  ],
-  "author": "muhammad rafat kurkar [+962792914245]",
-  "license": "GPL-3.0"
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  }
 }
