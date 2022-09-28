@@ -2,18 +2,18 @@ import { ButtonStyle } from "discord.js";
 import { CommandFilerType } from "../../lib/handler/command";
 export let command = {
     slachcmd: {
-        name: "transfare",
+        name: "transfer",
         description: "to show sent history",
         category: "economy",
-        examples: ["transfare"],
-        usage: ["transfare"],
+        examples: ["transfer"],
+        usage: ["transfer"],
         async run(client, interaction, manager) {
             const { PreviousPageButton, NextPageButton, InteractionPagination } = client.package.btn_pages;
             let user = interaction.user;
             let  eco = new client.managers.EcoSystem(client);
             let user_data = await eco.get_data(user);
-            let embeds = eco.EmbedTransfare(user_data.transfere, "transferred credits");
-            if(embeds.length === 0) embeds = [manager.generateDone("You Dont make any action", "Transfared History")];
+            let embeds = eco.EmbedTransfer(user_data.transfere, "transfered credits");
+            if(embeds.length === 0) embeds = [manager.generateDone("You Dont make any action", "transfered History")];
             const pagination = new InteractionPagination()
             .setButtons([
                 new PreviousPageButton({
@@ -29,17 +29,17 @@ export let command = {
         }
     },
     general: {
-        name: "transfare",
+        name: "transfer",
         description: "to show sent history",
         category: "economy",
-        examples: ["transfare"],
-        usage: ["transfare"],
+        examples: ["transfer"],
+        usage: ["transfer"],
         async run(client, message, _args, manager) {
             const { PreviousPageButton, NextPageButton, ChannelPagination } = client.package.btn_pages;
             let  eco = new client.managers.EcoSystem(client);
             let user_data = await eco.get_data(message.author);
-            let embeds = eco.EmbedTransfare(user_data.transfere, "transferred credits");
-            if(embeds.length === 0) embeds = [manager.generateDone("You Dont make any action", "Transfared History")];
+            let embeds = eco.EmbedTransfer(user_data.transfere, "transfered credits");
+            if(embeds.length === 0) embeds = [manager.generateDone("You Dont make any action", "transfered History")];
             const pagination = new ChannelPagination()
             .setButtons([
                 new PreviousPageButton({

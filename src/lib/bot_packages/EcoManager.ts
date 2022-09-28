@@ -83,7 +83,7 @@ export class KINGMAN_ECO {
         }
         return embeds
     };
-    EmbedRecive (arr: {from?: string | undefined; amout?: number | undefined}[], title: string) {
+    EmbedReceive (arr: {from?: string | undefined; amout?: number | undefined}[], title: string) {
         const embeds: EmbedBuilder[] = [];
         let k: number = 5;
         for(let i = 0; i < arr.length; i +=5){
