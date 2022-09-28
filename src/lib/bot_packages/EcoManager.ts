@@ -66,7 +66,7 @@ export class KINGMAN_ECO {
             });
         })
     }
-    EmbedTransfare (arr: {to?: string | undefined; amout?: number | undefined;}[], title: string) {
+    EmbedTransfer (arr: {to?: string | undefined; amout?: number | undefined;}[], title: string) {
         const embeds: EmbedBuilder[] = [];
         let k: number = 5;
         for(let i = 0; i < arr.length; i +=5){

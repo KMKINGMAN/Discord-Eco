@@ -3,7 +3,7 @@ import { CommandFilerType } from "../../lib/handler/command";
 export let command = {
     slachcmd: {
         name: "credits",
-        description: "to show your credits and transfare a credits",
+        description: "to show your credits and transfer a credits",
         options: [
             {
                 name: "member",
@@ -44,7 +44,7 @@ export let command = {
     },
     general: {
         name: "daily",
-        description: "to show your credits and transfare a credits",
+        description: "to show your credits and transfer a credits",
         examples: ["credits", "credits @KINGMAN", "credits @KINGMAN 1000"],
         usage: ["credits", "credits [Member]", "credits [Member] [Amout]"],
         category: "economy",
